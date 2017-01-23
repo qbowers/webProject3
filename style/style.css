@@ -1,0 +1,187 @@
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {color: #414066;}
+
+a {color: #414066;}
+a:hover {
+	color: #636281;
+	text-decoration: none;
+}
+
+
+
+.hero {
+	display:inline-block;
+	width: 100%;
+}
+.home_hero {margin-top: -104px;}
+.hero-cover {
+	position: absolute;
+	top: 0%;
+	background-color: #000000;
+	opacity: 0.25;
+}
+.hero-cover-down {
+
+	width: 100%;
+	height: 0;
+	
+	animation: expanddownfull 1s cubic-bezier(.19,1,.22,1) 0s 1 forwards;
+}
+.hero-cover-right {
+
+	width: 0;
+	height: 100%;
+	
+	animation: expandrightfull 1s cubic-bezier(.19,1,.22,1) 0.5s 1 forwards;
+}
+.hero-panel {
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	height: 85px;
+	width: 0px;
+	
+	background-color: #ffff00;
+	
+	animation: expandright600 1s cubic-bezier(.19,1,.22,1) 1s 1 forwards;
+}
+.hero-panel h1 {
+	margin-top: 20px;
+	margin-left: 20px;
+	height: 40px;
+	overflow: hidden;
+}
+
+
+
+
+.navbar {
+	position: absolute;
+	top: -50px;
+	opacity: 0;
+	
+	width: 100%;
+	background-color: yellow;
+	
+	border-radius: 0px;
+	border-width: 0px;
+}
+.nav-toggle {
+	position: absolute;
+	top: 13px;
+	left: 13px;
+	
+	background-color: #414066;
+	opacity: 0;
+	width: 40px;
+	height: 38px;
+	
+	padding: 7px;
+	border-radius:2px;
+	
+	z-index: 1;
+	
+	animation: fadein 1s cubic-bezier(.19,1,.22,1) 0.5s 1 forwards;
+}
+.nav-toggle-bar {
+	background-color: #ffff00;
+	width: 25px;
+	height: 4px;
+	
+	margin-bottom: 5px;
+	border-radius: 3px;
+}
+.nav-toggle:hover + .navbar,
+.navbar:hover {
+	animation: fadeindown 0.5s cubic-bezier(.19,1,.22,1) 0s 1 forwards;
+}
+
+
+
+
+.image-display {
+	margin: 50px;
+	
+	display: inline-block;
+    height: 400px;
+	
+    width: 1px;
+    overflow: hidden;
+}
+.image-display img {
+	width: 922px;
+	margin-top: -100px;
+}
+.scroll-fade-in {
+	opacity: 0;
+	width: 0;
+}
+
+.about-img {
+	height: 400px;
+	width: 500px;
+	
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.center {
+	display: block;
+	margin: 0 auto;
+	
+	text-align: center;
+	
+}
+
+.about {
+	width: 80%;
+	height: 50px;
+	
+	margin-top: -200px;
+	background-color: #ffff00;
+	
+	
+}
+
+
+
+
+@keyframes expanddownfull {
+    from {height: 0%;}
+    to {height: 100%;}
+}
+@keyframes expandrightfull {
+    from {width: 0%;}
+    to {width: 100%;}
+}
+
+
+@keyframes fadein {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+@keyframes expandright600 {
+	from {width: 0px;}
+	to {width: 600px;}
+}
+@keyframes expandright300 {
+	from {width: 0px;}
+	to {width: 300px;}
+}
+@keyframes fadeindown {
+	from {opacity:0; top:-60px;}
+	to {opacity:1; top:0px;}
+}
+@keyframes fadeoutdown {
+	from {opacity:1; top:0px;}
+	to {opacity:0; top:-60px;}
+}
+
+
+@keyframes imagefadein {
+	from {opacity: 0; width:0}
+	to {opacity: 1; width:60%}
+}
