@@ -1,0 +1,83 @@
+body,
+html {
+	min-height: 100%;
+}
+
+.header {
+	background-color: #ffff00;
+	
+	margin-top: 100px;
+	
+	
+	width: 50%;
+	height: 0;
+	
+	padding-top: 0px;
+	
+	overflow: hidden;
+	
+	
+	animation: expanddown100 0.5s cubic-bezier(.19,1,.22,1) 0.3s 1 forwards;
+}
+.header h1 {
+	font-size: 40px;
+}
+
+.info {
+	background-color: #4c2a85;
+	
+	width: 70%;
+	
+	height: 0px;
+	padding-top: 0px;
+	
+	
+	position: absolute;
+	top: 250px;
+	
+	left: 50%;
+	margin-left: -35%;
+	
+	color: #ffff00;
+	
+	
+	overflow: hidden;
+	
+	animation: expanddown250 0.7s cubic-bezier(.19,1,.22,1) 0.7s 1 forwards;
+}
+.info p {
+	font-size: 20px;
+}
+
+
+.button {
+	color: #ffff00;
+	background-color: #320e3b;
+	
+	width: 200px;
+	height: 50px;
+	
+	margin-top: 30px;
+	padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+@keyframes expanddown250 {
+	from {height: 0; padding-top:0}
+	to {height: 250px; padding-top: 40px}
+}
+
+
+
+
+
+@keyframes expanddown100 {
+	from {height: 0; padding-top: 0}
+	to {height: 100px; padding-top: 9px;}
+}

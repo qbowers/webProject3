@@ -29,4 +29,21 @@ $(window).scroll(function(event) {
 
 
 
-console.log(window.innerWidth * 0.6);
+var footeropen = false
+$('#clickey').click(function() {
+	if (!footeropen) {
+		console.log('stuff happens');
+		$('#footer').css('animation', 'footeropen 1s cubic-bezier(.19,1,.22,1) 0s 1 forwards');
+		
+		$('#clickey').css('animation', 'clickeyround 1s cubic-bezier(.19,1,.22,1) 0s 1 forwards');
+		
+		
+		footeropen = true;
+	} else {
+		$('#footer').css('animation', 'footerclose 1s cubic-bezier(.22,1,.19,1) 0s 1 forwards');
+		
+		$('#clickey').css('animation', 'clickeysquare 1s cubic-bezier(.22,1,.19,1) 0s 1 forwards');
+		
+		footeropen = false;
+	}
+});

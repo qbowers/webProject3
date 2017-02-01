@@ -1,15 +1,29 @@
 .banner {
 	background-color: #ffff00;
 	
-	width: 50%;
+	width: 0;
 	height: 100px;
+	
+	overflow: hidden;
 	
 	padding-top: 10px;
 	margin-top: 100px;
 	margin-bottom: 100px;
+	
+	animation: expand50 0.5s cubic-bezier(.19,1,.22,1) 0.25s 1 forwards;
 }
 
 
 .row {
 	margin-left: 10px;
+}
+
+
+@keyframes expand50 {
+	from {width: 0}
+	to {width: 50%}
+}
+
+body,html {
+	min-height: 110%;
 }

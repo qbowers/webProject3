@@ -25,6 +25,7 @@
 				<li class=''><a href='gallery.html'>Gallery</a></li>
 				<li class=''><a href='about.html'>About</a></li>
 				<li class='active'><a href='#'>Contact</a></li>
+				<li class=''><a href='inprogress.html'>Supercool Fun Stuff</a></li>
 		  	</ul>
 			</div>
 		</div>
@@ -39,14 +40,71 @@
 		
 		<div class='thistle'>
 			<h1>Email</h1>
-			<p><a href='mailto: anemailaddress@website.com'>anemailaddress@website.com</a></p>
+			<p><a onclick='mailform()'>anemailaddress@website.com</a></p>
+			
+			<h1>Telephone</h1>
+			<p>(134) 312-4523</p>
+			
+			
 			<h1>Address</h1>
 			<p>876432 A STREET</p>
 			<p>City, State, Postal Code</p>
 		</div>
 		
 		
+		<div class='hero-cover hero-cover-down' style='animation: none;'></div>
+		
+		<div class='mailform'>
+			<div class='button center' style='margin-top: -20px; width: 100%'>
+				<h1>Mail Form</h1>
+			</div>
+			<br>
+			
+			<div class='row'>
+				<div class='col-md-6'>
+					 <input class='center form-control' type='text' placeholder='Name'>
+				</div>
+				<div class='col-md-6'>
+					<input class='center form-control' type='text' placeholder='Email'>
+				</div>
+				
+			</div>
+			
+			<br>
+			
+			<textarea class='center form-control' type='text' placeholder='Please type your message here' style='height: 400px; width: 100%;'></textarea>
+			
+			<div onclick='closeform()' class='button center'>
+				<h1>Submit</h1>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<div id='footer'>
+			<div id='clickey'>
+			<h1>...</h1>
+			</div>
+			<div id='footer-images'>
+				<div class='row'>
+					<div class='col-md-7'>
+						<h4>&copy Mishnii Inc. 2017</h4>
+					</div>
+					<div class='col-md-4'>
+						<img src='images/F.png'>
+						<img src='images/T.png'>
+						<img src='images/I.png'>
+						<img src='images/A.png'>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
 		
 	</body>
 	<script src='script/global.js'></script>
+	<script src='script/contact.js'></script>
 </html>

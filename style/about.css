@@ -1,3 +1,7 @@
+html {
+	position: static;
+}
+
 .banner {
 	position: absolute;
 	background-color: #ffff00;
@@ -22,8 +26,10 @@
 	height: 600px;
 }
 .image-display img {
-	margin-left: -250px;
-	margin-top: -50px;
+	margin-left: -200px;
+	margin-top: -100px;
+	
+	width: 800px;
 }
 
 
