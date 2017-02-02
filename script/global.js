@@ -16,15 +16,12 @@
 
 
 $(window).scroll(function(event) {
-  
   $(".scroll-fade-in").each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
-      //el.addClass("come-in");
 		el.css('animation', 'imagefadein 0.5s cubic-bezier(.19,1,.22,1) 0.2s 1 forwards')
     } 
   });
-  
 });
 
 

@@ -1,5 +1,6 @@
 .banner {
-	background-color: #ffff00;
+	background-color: #4c2a85	;
+	color: #ffff00;
 	
 	width: 0;
 	height: 100px;
@@ -8,7 +9,7 @@
 	
 	padding-top: 10px;
 	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 	
 	animation: expand50 0.5s cubic-bezier(.19,1,.22,1) 0.25s 1 forwards;
 }

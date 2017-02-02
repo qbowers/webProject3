@@ -5,21 +5,35 @@ html {
 
 .image-display {
 	position: absolute;
-	top: 10%;
+	top: 9%;
 	right: 10%;
-	width: 0;
+	height: 500px;
+	
 	
 	animation: imagefadein 0.5s cubic-bezier(.19,1,.22,1) 0.2s 1 forwards;
 }
+.image-display img{
+	width: 1000px;
+}
+
 
 .banner {
 	position: absolute;
 	background-color: #ffff00;
 	
+	overflow: hidden;
+	width: 0;
+	height: 80px;
+	
+	
 	top: 15%;
 	left: 20%;
 	
 	animation: expandright300 1s cubic-bezier(.19,1,.22,1) 0.5s 1 forwards;
+}
+.banner h1 {
+	margin-left: 15px;
+	height: 15px;
 }
 
 .thistle {
